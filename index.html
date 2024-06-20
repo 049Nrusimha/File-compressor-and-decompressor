@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Compressor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">TEXT FILE COMPRESSOR AND DECOMPRESSOR</h1>
+    </header>
+    <main class="container">
+        <section class="step">
+            <h2>UPLOAD YOUR FILE</h2>
+            <div id="step1" class="content">
+                <img src="assets/text_file_icon1.png" alt="Text File Icon" class="icon">
+                <form method="post" enctype="multipart/form-data" class="form" id="fileform">
+                    <input type="file" id="uploadfile" class="input">
+                    <input type="button" id="submitbtn" class="input" value="Submit">
+                </form>
+                <span id="text1">(.txt files only)</span>
+            </div>
+        </section>
+        <section class="step">
+            <h2>SELECT ACTION</h2>
+            <div id="step2" class="content">
+                <img src="assets/options_icon2.png" alt="Options Icon" class="icon">
+                <div class="buttons">
+                    <button type="button" id="encode" class="button">COMPRESS</button>
+                    <button type="button" id="decode" class="button">DE-COMPRESS</button>
+                </div>
+            </div>
+        </section>
+        <section class="step">
+            <h2>SIT BACK AND RELAX</h2>
+            <div id="step3" class="content">
+                <img src="assets/wait_icon1.png" alt="Wait Icon" class="icon">
+            </div>
+        </section>
+        <div class="restart">
+            <span>Click the button to Start Again!</span>
+            <button type="button" onclick="location.reload()">Start Again</button>
+        </div>
+    </main>
+    <footer>
+        <span class="text">
+            <span>Version 1.0.0</span>
+        </span>
+    </footer>
+</body>
+
+</html>
